@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="/sources/icon.jpg" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Bienvenido a Colombia</h1>
-        <p class="text-center">Explora los departamentos de Colombia y conoce más sobre sus características y capitales.</p>
+    <main class="mainhome gap-1">
+    <div class="container">
+        <h1 class="text-center mb-4">Ejercicio API Colombia</h1>
+        <p class="text-center">Departamentos de Colombia</p>
         
-        <!-- Barra de búsqueda -->
-        <div class="mb-3">
-            <input type="text" id="searchInput" class="form-control" placeholder="Buscar departamento por nombre...">
+        <div class="mb-3 searchbar">
+            <input type="text" id="searchInput" class="form-control searchbar" placeholder="Buscar departamento por nombre...">
         </div>
 
-        <!-- Filtro para ordenar por orden alfabético -->
-        <div class="mb-4">
+        <div class="mb-4 selector">
             <label for="sortSelect">Ordenar por:</label>
             <select id="sortSelect" class="form-control w-25">
                 <option value="asc">Orden Alfabético (A-Z)</option>
@@ -26,11 +26,15 @@
             </select>
         </div>
 
-        <!-- Contenedor de tarjetas -->
         <div id="departments-container" class="row">
-            <!-- Tarjetas generadas dinámicamente con JavaScript -->
         </div>
     </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">2024 - Juan Pablo Villa</p>
+        </div>
+    </footer>
 
     <script src="script/home.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

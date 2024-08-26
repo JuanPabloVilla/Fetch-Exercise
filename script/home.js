@@ -6,14 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let departmentsData = [];
 
-    // Fetch departments data
     fetch(apiURL)
         .then(response => response.json())
         .then(data => {
             departmentsData = data;
             displayDepartments(departmentsData);
             
-            // Listener para cambiar el orden
             sortSelect.addEventListener('change', () => {
                 const sortedData = departmentsData.sort((a, b) => {
                     if (sortSelect.value === 'asc') {
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 displayDepartments(sortedData);
             });
 
-            // Listener para buscar departamentos
             searchInput.addEventListener('input', () => {
                 const filteredData = departmentsData.filter(dept => 
                     dept.name.toLowerCase().includes(searchInput.value.toLowerCase())
@@ -42,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             card.classList.add('col-md-4', 'mb-4');
             card.innerHTML = `
                 <div class="card">
-                    <img src="sources/maps/${dept.name}.jpg" class="card-img-top" alt="Mapa de ${dept.name}">
+                    <img src="./sources/bogota.png" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">${dept.name}</h5>
                         <p class="card-text">Capital: ${dept.cityCapital}</p>
