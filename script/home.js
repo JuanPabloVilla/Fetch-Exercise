@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             card.classList.add('col-md-4', 'mb-4');
             card.innerHTML = `
                 <div class="card">
-                    <img src="./sources/bogota.png" class="card-img-top">
+                    <img src="./sources/bogota.png" class="card-img-top imagenes">
                     <div class="card-body">
                         <h5 class="card-title">${dept.name}</h5>
                         <p class="card-text">Capital: ${dept.cityCapital}</p>

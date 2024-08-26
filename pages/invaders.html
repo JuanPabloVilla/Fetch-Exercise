@@ -8,23 +8,48 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1>Especies Invasoras en Colombia</h1>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Nombre Científico</th>
-                    <th>Impacto</th>
-                    <th>Manejo</th>
-                    <th>Nivel de Riesgo</th>
-                    <th>Imagen</th>
-                </tr>
-            </thead>
-            <tbody id="especies-table">
-            </tbody>
-        </table>
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../sources/icon.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../home.html">Home</a>
+                <a class="nav-link" href="#">Especies invasoras</a>
+              </div>
+            </div>
+          </div>
+        </nav>    
+      </header>
+
+      <main class="mainhome gap-1>
+        <div class="container mt-5">
+            <h1>Especies Invasoras en Colombia</h1>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Nombre Científico</th>
+                        <th>Impacto</th>
+                        <th>Manejo</th>
+                        <th>Nivel de Riesgo</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="especies-table">
+                </tbody>
+            </table>
+        </div>
+      </main>
+      
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">2024 - Juan Pablo Villa</p>
+        </div>
+    </footer>
 
     <script src="/script/invaders.js"></script>
 </body>

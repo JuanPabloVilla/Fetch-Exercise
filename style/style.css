@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: white;
+    text-align: center;
 }
 
 .header {
@@ -90,7 +91,7 @@ body {
     color: white;
 }
 
-.footer {
+.footer, header{
     text-align: center;
     background-color: #355070;
     color: white;
@@ -106,4 +107,17 @@ body {
 
 .img-fluid{
     width: 40rem;
+}
+
+.imagenes{
+    width: 200px;
+    object-fit: cover;
+}
+
+.navbar-brand img{
+    height: 3rem;
+}
+
+header, footer{
+    min-height: 6vh;
 }
